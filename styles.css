@@ -1,0 +1,122 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+  color: #ffffff;
+  background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+
+.hero {
+  max-width: 800px;
+  width: 100%;
+}
+
+
+.announcement {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.announcement-link {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #ffffff;
+  transition: background 0.3s ease-in-out;
+}
+
+.announcement-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.announcement-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+  border: 2px solid rgb(192, 192, 192);
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 8px 20px;
+}
+
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  background: linear-gradient(to right, #f32170, #ff6b08,#cf23cf, #eedd44);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  padding: 0  30px;
+  background: -webkit-linear-gradient(#f14437, #d45fcf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(to right, #5a4fcf, #9858f5);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.cta-button svg {
+  margin-left: 8px;
+}
+
+.cta-button:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}
